@@ -1,0 +1,24 @@
+<html>
+<head>
+</head>
+<body>
+<img src="images/team-image-1.jpg" height=200 width=200 id="imm" align="right">
+
+<script type="text/javascript">
+
+function bulb() {
+
+var b = document.getElementById("imm");
+
+if(b.src.match("images/team-image-3.jpg")) {
+ b.src = "images/team-image-4.jpg";
+}
+ else {
+
+ b.src="images/team-image-4.jpg";
+}
+}
+ setInterval(bulb,1000);
+</script>
+</body>
+</html>
